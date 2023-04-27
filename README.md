@@ -3,3 +3,8 @@
 ## Sobre o projeto
 
 Projeto CRUD básico utilizando Laravel
+
+
+
+https://user-images.githubusercontent.com/109253086/234969266-b26fea5e-e0fb-4c2d-a6f0-990ceaf82c48.mp4
+
