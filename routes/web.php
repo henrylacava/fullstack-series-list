@@ -13,14 +13,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', function() {
+    return redirect('/series');
+});
 
-Route::get('/series', [SerieController::class, 'index']);
+Route::controller(SerieController::class)->group(function () {
+    Route::get('/series', 'index')->name('serie.index');
+    Route::get('/series/create', 'create')->name('serie.create');
+    Route::post('/series/store', 'store')->name('serie.store');
+    Route::get('/series/edit/{id}', 'edit')->name('serie.edit');
+    Route::put('/series/update/{id}', 'update')->name('serie.update');
+    Route::delete('/serie/delete/{id}', 'destroy')->name('serie.destroy');
+});
 
-Route::get('/series/create', [SerieController::class, 'create']);
-Route::post('/series/store', [SerieController::class, 'store']);
-
-Route::get('/series/edit/{id}', [SerieController::class, 'edit']);
-
-Route::put('/series/update/{id}', [SerieController::class, 'update']);
-
-Route::get('/series/delete/{id}', [SerieController::class, 'destroy']);

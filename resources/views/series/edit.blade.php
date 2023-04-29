@@ -1,5 +1,5 @@
 <x-layout title="Edit">
-    <form action="{{ url('/series/update/'.$serie->id) }}" method="POST">
+    <form action="{{ route('serie.update', $serie->id) }}" method="POST">
         @csrf
         @method('PUT')
         <div class="mb-3">
