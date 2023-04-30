@@ -1,4 +1,4 @@
-<x-layout title="Edit">
+<x-layout title="Editar Serie '{!! $serie->name !!}'">
     <form action="{{ route('serie.update', $serie->id) }}" method="POST">
         @csrf
         @method('PUT')
