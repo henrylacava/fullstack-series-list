@@ -13,7 +13,9 @@
     <tbody>
             @foreach ($series as $serie)
                 <tr>
-                    <td>{{ $serie->name }}</td>
+                    <td>
+                        <a href="{{ route('seasons.index', $serie->id) }}">{{ $serie->name }}</a>
+                    </td>
                     <td class="d-flex justify-content-end">
                         <a href="{{ route('serie.edit', $serie->id) }}" class="btn btn-success btn-sm me-3">Editar</a>
                         <form action="{{ route('serie.destroy', $serie->id) }}" method="POST">
