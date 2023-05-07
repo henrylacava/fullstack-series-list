@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Projeto CRUD básico utilizando Laravel
+Projeto fullstack fazendo CRUD utilizando Laravel
 
 
 
