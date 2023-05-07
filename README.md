@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Projeto fullstack fazendo CRUD utilizando Laravel
+Projeto fullstack fazendo CRUD e com sistema de login utilizando Laravel
 
 
 
