@@ -30,8 +30,8 @@ class SerieController extends Controller
 
     public function edit($id)
     {
-        $serie = Series::find($id);
-        return view('series.edit')->with('series', $serie);
+        $series = Series::find($id);
+        return view('series.edit')->with('series', $series);
     }
 
     public function update(Request $request, $id)
@@ -48,5 +48,6 @@ class SerieController extends Controller
         $serie = Series::find($id);
         $serie->delete();
         $request->session()->flash('mensagem.sucesso', "Serie '{$serie->name}' removida com sucesso");
+        return to_route('serie.index');
     }
 }
