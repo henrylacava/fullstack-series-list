@@ -1,9 +1,11 @@
 <x-layout title="Séries">
+
     @if($mensagemSucesso)
     <div class="alert alert-success">
         {{ $mensagemSucesso }}
     </div>
     @endif
+    
 <table class="table table-striped table-bordered ">
     <thead>
         <tr>
@@ -14,7 +16,7 @@
             @foreach ($series as $serie)
                 <tr>
                     <td>
-                        <a href="{{ route('seasons.index', $serie->id) }}">{{ $serie->name }}</a>
+                        <a class="text-decoration-none text-reset" href="{{ route('seasons.index', $serie->id) }}">{{ $serie->name }}</a>
                     </td>
                     <td class="d-flex justify-content-end">
                         <a href="{{ route('serie.edit', $serie->id) }}" class="btn btn-success btn-sm me-3">Editar</a>

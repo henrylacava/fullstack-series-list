@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('season_id');
             $table->foreign('season_id')->references('id')->on('seasons')->onDelete('cascade');
             $table->unsignedTinyInteger('number');
+            $table->boolean('watched')->default(false);
         });
     }
 
