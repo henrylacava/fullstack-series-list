@@ -6,5 +6,4 @@ Projeto fullstack fazendo CRUD e com sistema de login utilizando Laravel
 
 
 
-https://user-images.githubusercontent.com/109253086/234969266-b26fea5e-e0fb-4c2d-a6f0-990ceaf82c48.mp4
-
+https://user-images.githubusercontent.com/109253086/236698466-5c9a474a-4e01-4ba6-b36c-74a19a9b6d97.mp4
